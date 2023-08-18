@@ -93,9 +93,9 @@ img{
     transition: color 0.4s linear;
     font-size: 20px;
 }
-.head-icon:hover{
+/* .head-icon:hover{
     color: var(--pacificBlue);
-}
+} */
 .head-body{
     display: flex;
     justify-content: center;
@@ -122,8 +122,14 @@ img{
 }
 .btnnav a{
     text-decoration: none;
-    color: #000;
-   
+    color: #fff;
+ padding: 10px;
+ font-weight: bold;
+ font-size: larger;
+}
+
+.btnnav :hover{
+    background: var(--pacificBlue);
 }
 
 
