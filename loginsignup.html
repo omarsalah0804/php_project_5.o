@@ -9,38 +9,56 @@
 </head>
 <body>
     <div class="container" id="container">
+        
         <div class="form-container sign-up-container">
-            <form action="#">
+            <div class="scrollable-form"><form class="sign-up-htm" action="register.php" method="post" id="Formsignup">
                 <h1>Create Account</h1>
-                <!-- <div class="social-container">
-                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-                </div> -->
-                <span></span>
-                <input type="text" placeholder="Username" / required>
-                <input type="email" placeholder="Email" / required>
-                <input type="password" placeholder="Password" / required>
-                <input type="password" placeholder="Confirm password" / required>
-                <input type="name" placeholder="Full Name" / required>
-                <input type="adress" placeholder="Adress" / required>
+               
                 
-                <button>Sign Up</button>
-            </form>
+                <div class="group">
+                    
+                    <input placeholder="Your Name" id="fristname" required required pattern="[a-zA-Z]+" title=" alphabets characters only" type="text" class="input" name="fristname">
+                </div>
+                
+                <div class="group">
+                    
+                    <input placeholder="Username" id="Username" required  type="text" class="input" name="fristname">
+                </div>
+                
+              
+             
+                <div class="group">
+                   
+                    <input placeholder="EmailAddress" id="EmailAddress" type="text" class="input" required name="EmailAddress">
+                    <p id="emailtex" class="hiden" style="font-weight: bold; position: sticky; font-size: 1.5vmin; color: red  ;">Email should be like this example@example.com</p>
+                </div>
+                <div class="group">
+                    
+                    <input placeholder="password" id="Password" type="password" class="input" data-type="password" name="passwordsing" required>
+                    <p id="Passwordtex" class="hiden" style=" font-weight: bold; position: sticky; font-size: 1.5vmin; color: red  ;">Password must contain capital and small letters,numbers and a symbol</p>
+                </div>
+                
+                <div class="group">
+                    
+                    <input placeholder="confirmPassword" id="confirmPassword" type="password" class="input" data-type="password" required name="confirmPassword">
+                    <p id="ConfirmPasswordtex" class="hiden" style="font-weight: bold; position: sticky; font-size: 1.5vmin; color: red  ;">The two passwords doesn't match</p>
+                </div>
+                <div class="group">
+                    <button type="submit" class="button" value="Submit" name="singup">sing-up </button>
+                </div>
+              
+            </form></div>
+            
+            
         </div>
         <div class="form-container sign-in-container">
             <form action="#">
                 <h1>Login</h1>
-                <!-- <div class="social-container">
-                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-                </div> -->
+                
                 <span>or use your account</span>
                 <input type="email" placeholder="Email" / required>
                 <input type="password" placeholder="Password" / required>
               
-                <!-- <a href="#">Forgot your password?</a> -->
                 <button>Login</button>
             </form>
         </div>
@@ -60,26 +78,9 @@
         </div>
     </div>
     
-    <!-- <footer>
-        <p>
-            Created with <i class="fa fa-heart"></i> by
-            <a target="_blank" href="https://florin-pop.com">Florin Pop</a>
-            - Read how I created this and how you can join the challenge
-            <a target="_blank" href="https://www.florin-pop.com/blog/2019/03/double-slider-sign-in-up-form/">here</a>.
-        </p>
-    </footer> -->
-    <script>
-        const signUpButton = document.getElementById('signUp');
-const signInButton = document.getElementById('signIn');
-const container = document.getElementById('container');
-
-signUpButton.addEventListener('click', () => {
-	container.classList.add("right-panel-active");
-});
-
-signInButton.addEventListener('click', () => {
-	container.classList.remove("right-panel-active");
-});
-    </script>
+    
+    <script src="register.js"></script>
+  
+    
 </body>
 </html>
