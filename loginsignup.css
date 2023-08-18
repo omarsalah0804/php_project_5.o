@@ -13,6 +13,11 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	height: 100vh;
 	margin: -20px 0 50px;
+    background-image: url(./img/black-and-white-rug-1.jpg);
+    background-repeat: no-repeat;
+    /* background-position: top; */
+    background-size: cover;
+    height: 90vh;
 }
 
 h1 {
@@ -161,7 +166,7 @@ input {
 .overlay {
 	background: #FF416C;
 	background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
-	background: linear-gradient(to right, #FF4B2B, #FF416C);
+     background-color: #1f1f26;;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
@@ -195,19 +200,23 @@ input {
 
 .overlay-left {
 	transform: translateX(-20%);
+    background-color: #1f1f26;
 }
 
 .container.right-panel-active .overlay-left {
 	transform: translateX(0);
+
 }
 
 .overlay-right {
 	right: 0;
 	transform: translateX(0);
+    background-color: #1f1f26;
 }
 
 .container.right-panel-active .overlay-right {
 	transform: translateX(20%);
+    
 }
 
 .social-container {
