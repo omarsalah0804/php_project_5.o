@@ -233,28 +233,12 @@ input {
 	height: 40px;
 	width: 40px;
 }
-/* 
-footer {
-    background-color: #222;
-    color: #fff;
-    font-size: 14px;
-    bottom: 0;
-    position: fixed;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 999;
+.hiden{
+	display: none;
 }
-
-footer p {
-    margin: 10px 0;
+.scrollable-form {
+    height: 400px; /* Set the desired height for the scrollable area */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds the container height */
+    padding: 10px; /* Add some padding to the form to prevent content from sticking to edges */
+    border: 1px solid #ccc; /* Optional: Add a border for visual separation */
 }
-
-footer i {
-    color: red;
-}
-
-footer a {
-    color: #3c97bf;
-    text-decoration: none;
-} */
