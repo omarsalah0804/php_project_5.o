@@ -8,32 +8,7 @@
 <title>document</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
-<style>
-    	body{
-    margin-top:20px;
-    background:#eee;
-}
-.ui-w-40 {
-    width: 40px !important;
-    height: auto;
-}
-
-.card{
-    box-shadow: 0 1px 15px 1px rgba(52,40,104,.08);    
-}
-
-.ui-product-color {
-    display: inline-block;
-    overflow: hidden;
-    margin: .144em;
-    width: .875rem;
-    height: .875rem;
-    border-radius: 10rem;
-    -webkit-box-shadow: 0 0 0 1px rgba(0,0,0,0.15) inset;
-    box-shadow: 0 0 0 1px rgba(0,0,0,0.15) inset;
-    vertical-align: middle;
-}
-    </style>
+<link rel="stylesheet" href="cart.css">
 </head>
 <body>
 <div class="container px-3 my-5 clearfix">
