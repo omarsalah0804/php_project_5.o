@@ -3,21 +3,24 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>cushionHouse</title>
+    <title>HarmonyHomeStyles</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+        <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/> 
   </head>
   <body>
     
     <!-- header -->
     <header class = "header">
+    
       <div class = "head-top">
         <a href = "index.html" class = "brand-name">
-          cushion
-          <span>House</span>
+          Harmony
+          <span>HomeStyles</span>
         </a>
         <div class="btnnav">
           
@@ -28,24 +31,81 @@
         </div>
 
       </div>
+ 
 
-      <div class = "head-body container">
-        <div class = "head-body-content">
-          <h1 class = "head-title">
-            welcome to  cushion furniture
-          </h1>
-          <p class = "text">
-            Each piece in our collection is a testament to the dedication of master craftsmen. Meticulously crafted using the finest materials, our furniture stands as a tribute to both artistry and durability. We believe that furniture should not only adorn your space but also stand the test of time.
-          </p>
-          <button type = "button" class = "btn">
-            shop now
-          </button>
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide" data-swiper-autoplay="2000"><div class = "head-body container">
+            <div class = "head-body-content">
+              <h1 class = "head-title">
+                welcome to Harmony HomeStyles
+              </h1>
+              <p class = "text">
+                Step into a world of elegance and comfort where your dream living spaces come to life. We are delighted to extend our warmest welcome to you, as you embark on a journey through our exquisite collection of fine furniture.
+              </p>
+              <button type = "button" class = "btn">
+                shop now
+              </button>
+            </div>
+    
+            <div class = "head-body-img">
+              <img src = "./img/360_F_68714482_uPxuPF8WjodBNx6TTNcbRmzmmZy2xGHh.webp" alt = "header image">
+            </div>
+          </div>
         </div>
-
-        <div class = "head-body-img">
-          <img src = "./img/360_F_68714482_uPxuPF8WjodBNx6TTNcbRmzmmZy2xGHh.webp" alt = "header image">
+          <div class="swiper-slide" ><div class = "head-body container">
+            <div class = "head-body-content">
+              <h1 class = "head-title">
+                welcome to Harmony HomeStyles
+              </h1>
+              <p class = "text">
+                <h3>Comfortable black Sofa</h3>
+              <h3><del>$180.00</del></h3>
+              <h4>$100.00</h4>
+              <h2>Get the offer now !!</h2>
+              </p>
+              <button type = "button" class = "btn">
+                shop now
+              </button>
+            </div>
+    
+            <div class = "head-body-img">
+              <img src = "./img/black-and-white-rug-1.jpg" alt = "header image">
+            </div>
+          </div>
         </div>
+          <div class="swiper-slide" >
+            <div class = "head-body container">
+            <div class = "head-body-content">
+              <h1 class = "head-title">
+                welcome to Harmony HomeStyles
+              </h1>
+              <p class = "text">
+                <h3>Table With Four Chairs</h3>
+                <h3><del>$220.00</del></h3>
+                <h4>$160.00</h4>
+                <h2>Get the offer now !!</h2>
+              </p>
+              <button type = "button" class = "btn">
+                shop now
+              </button>
+            </div>
+    
+            <div class = "head-body-img">
+              <img src = "./img/esstisch-form-s.webp" alt = "header image">
+            </div>
+          </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
+       
     </header>
     <!-- end of header -->
 
@@ -53,17 +113,20 @@
     <section class = "trend">
       <div class = "container">
         <div class = "title">
-          <h4>Discount</h4>
-          <h2> Product Discount</h2>
+          <h4>Recommended For you</h4>
+          <h3> Top Selling</h3>
         </div>
-
         <div class = "trend-grid">
+
+
+
+          
           <!-- item -->
           <div class = "trend-item">
             <img src = "./img/best-selling-1.png" alt = "best product">
             <div class = "trend-item-content">
               <h4>Brown Sofa With Pillows</h4>
-              <h4>$60.00</h4>
+              <h3>$130.00</h3>
               <div class = "stars">
                 <span><i class = "fas fa-star"></i></span>
                 <span><i class = "fas fa-star"></i></span>
@@ -77,13 +140,16 @@
             </div>
           </div>
           <!-- end of item -->
+
+
+
           <!-- item -->
           <div class = "trend-item">
             <img src = "./img/108-1088280_studio-couch.webp" alt = "best product">
             <div class = "trend-item-content">
               <h4>Comfortable black Sofa</h4>
-              <h2><del>$80.00</del></h2>
-              <h4>$60.00</h4>
+              <h3>$170.00</h3>
+              
               <div class = "stars">
                 <span><i class = "fas fa-star"></i></span>
                 <span><i class = "fas fa-star"></i></span>
@@ -104,7 +170,7 @@
             <img src = "./img/best-selling-3.png" alt = "best product">
             <div class = "trend-item-content">
               <h4>Stylish Red Chair</h4>
-              <h4>$30.00</h4>
+              <h3>$50.00</h3>
               <div class = "stars">
                 <span><i class = "fas fa-star"></i></span>
                 <span><i class = "fas fa-star"></i></span>
@@ -131,19 +197,20 @@
         <!-- item -->
         <div class = "featured-item">
           <div class = "featured-item-img">
-            <img src = "assets/red-sofa-photo.png" alt = "feature image">
+            <img src = "./img/Home-interior-mock-up-with-red-sofa-table-and-decor-in-green-living-room.jpg" alt = "feature image">
           </div>
           <div class = "featured-item-content">
             <div class = "title">
-              <h4>featured product </h4>
-              <h2>red sofa with pillows</h2>
-              <p class = "item-price">$55.00</p>
+              <h3>Featured Product </h3>
+              <h3>Red Sofa With Pillows</h3>
+              <p class = "item-price">$250.00</p>
             </div>
             <p class = "text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quasi consequatur veniam, veritatis necessitatibus rem voluptas pariatur doloremque id culpa, eveniet, ratione libero eos fuga.
+              Very high quality  <br>made of oak wood <br>
+              Made in Sweden
             </p>
             <div class = "featured-btns">
-              <button type = "button" class = "btn">Explore</button>
+              <button type = "button" class = "btn">Show More</button>
               <button type = "button" class = "btn">Purchase</button>
             </div>
           </div>
@@ -152,19 +219,19 @@
         <!-- item -->
         <div class = "featured-item">
           <div class = "featured-item-img">
-            <img src = "assets/single-comfort-sofa-chair.png" alt = "feature image">
+            <img src = "./img/d764da66-4208-4874-951e-ad7bcba423b3.f77a7a795340f1e65041f9b152630f2a.webp" alt = "feature image">
           </div>
           <div class = "featured-item-content">
             <div class = "title">
-              <h4>featured product </h4>
-              <h2>single comfort sofa chair</h2>
-              <p class = "item-price">$42.00</p>
+              <h3>Featured Product </h3>
+              <h3>Single Comfort Sofa Chair</h3>
+              <p class = "item-price">$90.00</p>
             </div>
             <p class = "text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quasi consequatur veniam, veritatis necessitatibus rem voluptas pariatur doloremque id culpa, eveniet, ratione libero eos fuga.
+              Modern Single Accent Sofa with Wood Frame and Metal Legs, Comfortable Seat Cushion Single Sofa Chair, Upholstered Comfy Reading Accent Chair for Living Room, Bedroom, Office and Reception Area.
             </p>
             <div class = "featured-btns">
-              <button type = "button" class = "btn">Explore</button>
+              <button type = "button" class = "btn">Show More</button>
               <button type = "button" class = "btn">Purchase</button>
             </div>
           </div>
@@ -173,44 +240,44 @@
         <!-- item -->
         <div class = "featured-item">
           <div class = "featured-item-img">
-            <img src = "assets/sofa-png-image.png" alt = "feature image">
+            <img src = "./img/ff58d9ea-3726-4071-9a68-7a2189e35416.37ba7edc0048fcb0b688996db9af79b2.jpeg" alt = "feature image">
           </div>
           <div class = "featured-item-content">
             <div class = "title">
-              <h4>featured product </h4>
-              <h2>warm brown sofa</h2>
+              <h3>Featured Product </h3>
+              <h3>Warm Green Chair</h3>
               <p class = "item-price">$78.00</p>
             </div>
             <p class = "text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quasi consequatur veniam, veritatis necessitatibus rem voluptas pariatur doloremque id culpa, eveniet, ratione libero eos fuga.
+              TOPJAN Gorgeous Velvet Sofa,Luxury Furniture Arm Chairs Green Single Sofa Chair with 1 Pillow,Comfortable and Light,Brings a Warm Atmosphere to your home.
             </p>
             <div class = "featured-btns">
-              <button type = "button" class = "btn">Explore</button>
+              <button type = "button" class = "btn">Show More</button>
               <button type = "button" class = "btn">Purchase</button>
             </div>
           </div>
         </div>
         <!-- end of item -->
         <!-- item -->
-        <div class = "featured-item">
+        <!-- <div class = "featured-item">
           <div class = "featured-item-img">
             <img src = "assets/wide-sofa.png" alt = "feature image">
           </div>
           <div class = "featured-item-content">
             <div class = "title">
               <h4>featured product </h4>
-              <h2>wide comfortable sofa</h2>
+              <h3>wide comfortable sofa</h3>
               <p class = "item-price">$90.55</p>
             </div>
             <p class = "text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quasi consequatur veniam, veritatis necessitatibus rem voluptas pariatur doloremque id culpa, eveniet, ratione libero eos fuga.
             </p>
             <div class = "featured-btns">
-              <button type = "button" class = "btn">Explore</button>
+              <button type = "button" class = "btn">Show More</button>
               <button type = "button" class = "btn">Purchase</button>
             </div>
           </div>
-        </div>
+        </div> -->
         <!-- end of item -->
       </div>
     </section>
@@ -221,19 +288,19 @@
       <div class = "container">
         <div class = "title">
           <h4>daily update</h4>
-          <h2>latest blog</h2>
+          <h3>latest blog</h3>
         </div>
 
         <div class = "blog-grid">
           <!-- item -->
           <div class = "blog-item">
             <div class = "blog-item-img">
-              <img src = "assets/blog-img-1.jpg" alt = "blog image">
+              <img src = "./img/creative-home-decor-ideas.jpg" alt = "blog image">
             </div>
             <div class = "blog-item-content">
               <a href = "#">creative ideas for decoration</a>
               <div>
-                <span>january 20 | design | furniture</span>
+                <!-- <span>january 20 | design | furniture</span> -->
               </div>
             </div>
           </div>
@@ -241,25 +308,25 @@
           <!-- item -->
           <div class = "blog-item">
             <div class = "blog-item-img">
-              <img src = "assets/blog-img-2.jpg" alt = "blog image">
-            </div>
-            <div class = "blog-item-content">
-              <a href = "#">decorate your home with the most modern furnishings.</a>
-              <div>
-                <span>january 25 | design | furniture</span>
-              </div>
-            </div>
-          </div>
-          <!-- end of item -->
-          <!-- item -->
-          <div class = "blog-item">
-            <div class = "blog-item-img">
-              <img src = "assets/blog-img-3.jpg" alt = "blog image">
+              <img src = "./img/BL_Amb_Amethist_Glance.jpg" alt = "blog image">
             </div>
             <div class = "blog-item-content">
               <a href = "#">furniture designs & contemporary art</a>
               <div>
-                <span>january 28 | design | furniture</span>
+                <!-- <span>january 25 | design | furniture</span> -->
+              </div>
+            </div>
+          </div>
+          <!-- end of item -->
+          <!-- item -->
+          <div class = "blog-item">
+            <div class = "blog-item-img">
+              <img src = "./img/living-room-decor-ideas-5442837-hero-8b6e540e13f9457a84fe9f9e26ea2e5c.jpg" alt = "blog image">
+            </div>
+            <div class = "blog-item-content">
+              <a href = "#">decorate your home with the most modern furnishings.</a>
+              <div>
+                <!-- <span>january 28 | design | furniture</span> -->
               </div>
             </div>
           </div>
@@ -299,7 +366,7 @@
     <footer class = "footer container">
       <div class = "footer-item">
         <h2 class = "brand-name">
-          Sofa <span>House</span>
+          Harmony  <span>HomeStyles</span>
         </h2>
         <p>social media accounts</p>
         <ul class = "footer-icons">
@@ -353,4 +420,6 @@
     </footer>
     <!-- end of footer -->
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="slider.js"></script>
 </html>
