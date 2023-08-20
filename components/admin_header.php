@@ -15,7 +15,11 @@ if(isset($message)){
 
    <section class="flex">
 
+<<<<<<< HEAD
       <a href="dashboard.php" class="logo">Admin<span>Dashboard</span></a>
+=======
+      <a href="dashboard.php" class="logo">Admin<span>Panel</span></a>
+>>>>>>> 262d1bb89f971cfd2a747515b375a7eb7efa4ea3
 
       <nav class="navbar">
          <a href="dashboard.php">home</a>
