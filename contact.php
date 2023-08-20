@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 
 include 'components/connect.php';
 
@@ -37,7 +37,7 @@ if(isset($_POST['send'])){
 
 }
 
-?>
+?> -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -52,17 +52,16 @@ if(isset($_POST['send'])){
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
    
-<!-- header section starts  -->
-<?php include 'components/user_header.php'; ?>
-<!-- header section ends -->
+
 
 <div class="heading">
    <h3>contact us</h3>
-   <p><a href="home.php">home</a> <span> / contact</span></p>
+   <p><a href="index.html">Home</a> <span> / Contact</span></p>
 </div>
 
 <!-- contact section starts  -->
@@ -72,7 +71,7 @@ if(isset($_POST['send'])){
    <div class="row">
 
       <div class="image">
-         <img src="images/contact-img.svg" alt="">
+         <img src="./img/A1HtSUkzYzL.webp" alt="">
       </div>
 
       <form action="" method="post">
@@ -90,6 +89,61 @@ if(isset($_POST['send'])){
 
 <!-- contact section ends -->
 
+<footer class = "footer container">
+      <div class = "footer-item">
+        <h2 class = "brand-name">
+          Harmony  <span>HomeStyles</span>
+        </h2>
+        <p>social media accounts</p>
+        <ul class = "footer-icons">
+          <li>
+            <a href = "#"><i class = "fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href = "#"><i class = "fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href = "#"><i class = "fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href = "#"><i class = "fab fa-linkedin"></i></a>
+          </li>
+          <li>
+            <a href = "#"><i class = "fab fa-google-plus-g"></i></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class = "footer-item">
+        <h3>links</h3>
+        <ul>
+          <li><a href = "#">home</a></li>
+          <li><a href = "#">download</a></li>
+          <li><a href = "#">pricing</a></li>
+          <li><a href = "about.html">about us</a></li>
+        </ul>
+      </div>
+
+      <div class = "footer-item">
+        <h3>products</h3>
+        <ul>
+          <li><a href = "#">chair</a></li>
+          <li><a href = "#">sofa</a></li>
+          <li><a href = "#">pillow</a></li>
+          <li><a href = "#">cushion</a></li>
+        </ul>
+      </div>
+
+      <div class = "footer-item">
+        <h3>support</h3>
+        <ul>
+          <li><a href = "#">FAQ</a></li>
+          <li><a href = "#">how it works</a></li>
+          <li><a href = "#">features</a></li>
+          <li><a href = "#">contact</a></li>
+        </ul>
+      </div>
+    </footer>
 
 
 
@@ -99,9 +153,7 @@ if(isset($_POST['send'])){
 
 
 
-<!-- footer section starts  -->
-<?php include 'components/footer.php'; ?>
-<!-- footer section ends -->
+
 
 
 

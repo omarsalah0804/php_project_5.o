@@ -71,7 +71,7 @@
                     <button class="ghost" id="signIn">Login</button>
                 </div>
                 <div class="overlay-panel overlay-right">
-                    <h1>Hello, Friend!</h1>
+                    <h1>Hello, Harm!</h1>
                     <p>Enter your personal details and start journey with us</p>
                     <button class="ghost" id="signUp">Sign Up</button>
                 </div>
