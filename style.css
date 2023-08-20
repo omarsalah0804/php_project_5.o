@@ -417,6 +417,11 @@ h2{
     margin: 10px;
 }
 
+/* Start about us */
+
+/* end about us*/
+
+
 /* Media Queries */
 @media screen and (min-width: 768px){
     .trend-grid{
@@ -446,7 +451,6 @@ h2{
         grid-row-gap: 16px;
     }
 }
-
 @media screen and (min-width: 992px){
     .container{
         padding: 5rem 10rem;
