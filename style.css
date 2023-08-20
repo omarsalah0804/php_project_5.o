@@ -41,9 +41,11 @@ img{
     padding: 12px 26px;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
+    border: none;
 }
 .btn:hover{
     color: var(--pacificBlue);
+    background-color: #dedee4;
 }
 
 /* header */
