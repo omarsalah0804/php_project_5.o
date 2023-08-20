@@ -30,11 +30,7 @@
 
    </section>
 
-<<<<<<< HEAD
-   <!-- <div class="credit">&copy; copyright @ <?= date('Y'); ?> by <span>mr. web designer</span> | all rights reserved!</div> -->
-=======
    <div class="credit">&copy; copyright @ <?= date('Y'); ?> by <span>mr. web designer</span> | all rights reserved!</div>
->>>>>>> 262d1bb89f971cfd2a747515b375a7eb7efa4ea3
 
 </footer>
 
