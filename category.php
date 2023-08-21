@@ -35,7 +35,7 @@ include 'components/add_cart.php';
 
 <section class="products">
 
-   <h1 class="title">food category</h1>
+   <h1 class="title">Furniture Category</h1>
 
    <div class="box-container">
 
@@ -87,7 +87,7 @@ include 'components/add_cart.php';
 
 
 
-<?php include 'components/footer.php'; ?>
+
 
 
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
