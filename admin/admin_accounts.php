@@ -92,7 +92,10 @@ if (isset($_GET['delete'])) {
 
       <div class="box-container">
 
-
+   <div class="box">
+      <p>register new admin</p>
+      <a href="register_admin.php" class="option-btn">register</a>
+   </div>
 
          <?php
          $select_account = $conn->prepare("SELECT * FROM `admin`");
