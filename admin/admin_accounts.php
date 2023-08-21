@@ -6,11 +6,11 @@ session_start();
 
 $admin_id = $_SESSION['admin_id'];
 
-if(!isset($admin_id)){
+if (!isset($admin_id)) {
    header('location:admin_login.php');
 }
 
-if(isset($_GET['delete'])){
+if (isset($_GET['delete'])) {
    $delete_id = $_GET['delete'];
    $delete_admin = $conn->prepare("DELETE FROM `admin` WHERE id = ?");
    $delete_admin->execute([$delete_id]);
@@ -21,6 +21,7 @@ if(isset($_GET['delete'])){
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,77 +33,79 @@ if(isset($_GET['delete'])){
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="../css/admin_style.css">
+   <style>
+      table {
+         width: 100%;
+         max-width: 1200px;
+         /* Set a maximum width for the table */
+         border-collapse: collapse;
+         margin-top: 2rem;
+      }
 
+      th,
+      td {
+         border: var(--border);
+         padding: 1rem;
+         text-align: center;
+      }
+
+      th {
+         background-color: var(--main-color);
+         color: var(--white);
+      }
+
+      td {
+         background-color: var(--light-bg);
+         color: var(--black);
+      }
+
+      tr:nth-child(even) {
+         background-color: var(--white);
+      }
+
+      tr:nth-child(odd) {
+         background-color: var(--light-bg);
+      }
+   </style>
 </head>
+
 <body>
 
-<?php include '../components/admin_header.php' ?>
+   <?php include '../components/admin_header.php' ?>
 
-<!-- admins accounts section starts  -->
+   <!-- admins accounts section starts  -->
 
-<section class="accounts">
+   <section class="accounts">
 
-   <h1 class="heading">admins account</h1>
+      <h1 class="heading">admins account</h1>
 
-   <div class="box-container">
+      <div class="box-container">
 
-   <div class="box">
-      <p>register new admin</p>
-      <a href="register_admin.php" class="option-btn">register</a>
-   </div>
 
-   <?php
-      $select_account = $conn->prepare("SELECT * FROM `admin`");
-      $select_account->execute();
-      if($select_account->rowCount() > 0){
-         while($fetch_accounts = $select_account->fetch(PDO::FETCH_ASSOC)){  
-   ?>
-   <div class="box">
-      <p> admin id : <span><?= $fetch_accounts['id']; ?></span> </p>
-      <p> username : <span><?= $fetch_accounts['name']; ?></span> </p>
-      <div class="flex-btn">
-         <a href="admin_accounts.php?delete=<?= $fetch_accounts['id']; ?>" class="delete-btn" onclick="return confirm('delete this account?');">delete</a>
+
          <?php
-            if($fetch_accounts['id'] == $admin_id){
-               echo '<a href="update_profile.php" class="option-btn">update</a>';
+         $select_account = $conn->prepare("SELECT * FROM `admin`");
+         $select_account->execute();
+         if ($select_account->rowCount() > 0) {
+            echo '<table>';
+            echo '<tr><th>Admin ID</th><th>Username</th><th>Actions</th></tr>';
+            while ($fetch_accounts = $select_account->fetch(PDO::FETCH_ASSOC)) {
+               echo '<tr>';
+               echo '<td>' . $fetch_accounts['id'] . '</td>';
+               echo '<td>' . $fetch_accounts['name'] . '</td>';
+               echo '<td>';
+               echo '<a href="admin_accounts.php?delete=' . $fetch_accounts['id'] . '" class="delete-btn" onclick="return confirm(\'Delete this account?\');">Delete</a>';
+
+               // Check if the current admin is the one being displayed
+               if ($fetch_accounts['id'] == $admin_id) {
+                  echo '<a href="update_profile.php" class="option-btn">Update</a>';
+               }
+
+               echo '</td>';
+               echo '</tr>';
             }
+            echo '</table>';
+         } else {
+            echo '<p class="empty">No accounts available</p>';
+         }
          ?>
-      </div>
-   </div>
-   <?php
-      }
-   }else{
-      echo '<p class="empty">no accounts available</p>';
-   }
-   ?>
-
-   </div>
-
-</section>
-
-<!-- admins accounts section ends -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- custom js file link  -->
-<script src="../js/admin_script.js"></script>
-
-</body>
-</html>
