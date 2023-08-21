@@ -340,16 +340,6 @@ section {
   border-radius: 0.5rem;
   margin: 1rem 0;
 }
-<<<<<<< HEAD
-/* 
-.show-products .box-container{
-   display: grid;
-   grid-template-columns: repeat(auto-fit, 33rem);
-   gap:1.5rem;
-   justify-content: center;
-   align-items: flex-start;
-} */
-=======
 
 .show-products .box-container {
   /* display: grid; */
@@ -358,7 +348,6 @@ section {
    justify-content: center;
    align-items: flex-start; */
 }
->>>>>>> 324a3d713ae7489160c9959ab531cae6b7e5bd28
 
 .show-products .box-container .box {
   background-color: var(--white);
