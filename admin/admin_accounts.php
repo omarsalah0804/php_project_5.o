@@ -44,19 +44,30 @@ if (isset($_GET['delete'])) {
 
       th,
       td {
-         border: var(--border);
-         padding: 1rem;
+<<<<<<< HEAD
+         border: 0.1rem solid #dfeaf1;
+=======
+         border:0.1rem solid #dfeaf1
+
+
+;
+>>>>>>> c371e3d7259fff1a257d957c887626aa6c9eeb4c
+         padding: 4rem;
          text-align: center;
       }
 
       th {
-         background-color: var(--main-color);
+         background-color: #C0D6E4;
          color: var(--white);
+         font-size: 1.5rem;
+         letter-spacing: 1px;
+         color: var(--black);
       }
 
       td {
          background-color: var(--light-bg);
          color: var(--black);
+         font-size: 1.5rem;
       }
 
       tr:nth-child(even) {
@@ -72,7 +83,7 @@ if (isset($_GET['delete'])) {
 <body>
 
    <?php include '../components/admin_header.php' ?>
-
+   <?php include '../components/admin_slider.php'; ?>
    <!-- admins accounts section starts  -->
 
    <section class="accounts">

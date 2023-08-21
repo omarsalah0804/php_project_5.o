@@ -41,7 +41,7 @@ if (isset($_POST['singup'])) {
             $row = $select_user->fetch(PDO::FETCH_ASSOC);
             if ($select_user->rowCount() > 0) {
                 $_SESSION['user_id'] = $row['id'];
-                header('location:home.php');
+                header('location:index.html');
             }
         }
     }
