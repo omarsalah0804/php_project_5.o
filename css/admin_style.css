@@ -269,7 +269,7 @@ section{
 }
 
 .dashboard .box-container{
-   display: grid;
+   /* display: grid; */
    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
    gap:1.5rem;
    align-items: flex-start;
@@ -307,7 +307,7 @@ section{
 
 .add-products form{
    margin:0 auto;
-   max-width: 50rem;
+   /* max-width: 50rem; */
    background-color: var(--white);
    border-radius: .5rem;
    box-shadow: var(--box-shadow);
@@ -333,7 +333,7 @@ section{
    border-radius: .5rem;
    margin: 1rem 0;
 }
-
+/* 
 .show-products .box-container{
    display: grid;
    grid-template-columns: repeat(auto-fit, 33rem);
@@ -341,7 +341,7 @@ section{
    gap:1.5rem;
    justify-content: center;
    align-items: flex-start;
-}
+}  */
 
 .show-products .box-container .box{
    background-color: var(--white);
@@ -463,8 +463,13 @@ section{
 }
 
 .accounts .box-container{
+<<<<<<< HEAD
+   /* display: grid; */
+   grid-template-columns: repeat(auto-fit, 33rem);
+=======
    display: grid;
    grid-template-columns: repeat(1, 1fr);
+>>>>>>> c371e3d7259fff1a257d957c887626aa6c9eeb4c
    gap:1.5rem;
    justify-content: center;
    align-items: flex-start;

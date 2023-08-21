@@ -1,9 +1,9 @@
 <?php
-if(isset($message)){
-   foreach($message as $message){
+if (isset($message)) {
+   foreach ($message as $message) {
       echo '
       <div class="message">
-         <span>'.$message.'</span>
+         <span>' . $message . '</span>
          <i class="fas fa-times" onclick="this.parentElement.remove();"></i>
       </div>
       ';
@@ -33,9 +33,9 @@ if(isset($message)){
 
       <div class="profile">
          <?php
-            $select_profile = $conn->prepare("SELECT * FROM `admin` WHERE id = ?");
-            $select_profile->execute([$admin_id]);
-            $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
+         $select_profile = $conn->prepare("SELECT * FROM `admin` WHERE id = ?");
+         $select_profile->execute([$admin_id]);
+         $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
          ?>
          <p><?= $fetch_profile['name']; ?></p>
          <a href="update_profile.php" class="btn">update profile</a>
