@@ -44,6 +44,7 @@ if (isset($_GET['delete'])) {
       width: 100%;
       border-collapse: collapse;
       margin-top: 2rem;
+      margin-left: 12rem;
    }
 
    .message-table th,

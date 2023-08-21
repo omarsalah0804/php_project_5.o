@@ -44,6 +44,7 @@ if (isset($_GET['delete'])) {
          /* Set a maximum width for the table */
          border-collapse: collapse;
          margin-top: 2rem;
+         margin-left: 12rem;
       }
 
       th,

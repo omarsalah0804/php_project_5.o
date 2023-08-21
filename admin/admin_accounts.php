@@ -40,18 +40,12 @@ if (isset($_GET['delete'])) {
          /* Set a maximum width for the table */
          border-collapse: collapse;
          margin-top: 2rem;
+         margin-left: 12rem;
       }
 
       th,
       td {
-<<<<<<< HEAD
          border: 0.1rem solid #dfeaf1;
-=======
-         border:0.1rem solid #dfeaf1
-
-
-;
->>>>>>> c371e3d7259fff1a257d957c887626aa6c9eeb4c
          padding: 4rem;
          text-align: center;
       }
@@ -92,10 +86,7 @@ if (isset($_GET['delete'])) {
 
       <div class="box-container">
 
-   <div class="box">
-      <p>register new admin</p>
-      <a href="register_admin.php" class="option-btn">register</a>
-   </div>
+
 
          <?php
          $select_account = $conn->prepare("SELECT * FROM `admin`");

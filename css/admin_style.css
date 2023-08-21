@@ -275,9 +275,11 @@ section {
 
 .dashboard .box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  grid-template-columns: 1fr repeat(3, minmax(20rem, 1fr));
+  grid-template-rows: repeat(3, minmax(0, 1fr));
   gap: 1.5rem;
   align-items: flex-start;
+  margin-left: 12rem;
 }
 
 .dashboard .box-container .box {
@@ -310,17 +312,6 @@ section {
   color: var(--light-color);
 }
 
-<<<<<<< HEAD
-.add-products form{
-   margin:0 auto;
-   /* max-width: 50rem; */
-   background-color: var(--white);
-   border-radius: .5rem;
-   box-shadow: var(--box-shadow);
-   border:var(--border);
-   padding:2rem;
-   text-align: center;
-=======
 .add-products form {
   margin: 0 auto;
   max-width: 50rem;
@@ -330,7 +321,6 @@ section {
   border: var(--border);
   padding: 2rem;
   text-align: center;
->>>>>>> 324a3d713ae7489160c9959ab531cae6b7e5bd28
 }
 
 .add-products form h3 {

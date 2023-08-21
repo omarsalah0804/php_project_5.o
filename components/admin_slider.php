@@ -93,22 +93,30 @@
                 <nav class="navbar-sidebar">
                     <ul class="list-unstyled navbar__list">
                         <li class="active has-sub">
-                            <a class="js-arrow" href="main.php">
+                            <a class="js-arrow" href="dashboard.php">
                                 <i class="fas fa-tachometer-alt"></i>Dashboard</a>
 
                         </li>
 
                         <li>
-                            <a href="user.php">
+                            <a href="users_accounts.php">
                                 <i class="fa fa-users"></i>User</a>
                         </li>
                         <li>
-                            <a href="category.php">
-                                <i class="far fa-check-square"></i>category</a>
+                            <a href="messages.php">
+                                <i class="far fa-check-square"></i>messages</a>
                         </li>
                         <li>
                             <a href="products.php">
                                 <i class="fa fa-barcode"></i>products</a>
+                        </li>
+                        <li>
+                            <a href="admin_accounts.php">
+                                <i class="fa fa-barcode"></i>admin</a>
+                        </li>
+                        <li>
+                            <a href="placed_orders.php">
+                                <i class="fa fa-barcode"></i>orders</a>
                         </li>
 
 
