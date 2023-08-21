@@ -65,5 +65,4 @@ if(isset($message)){
 
    </section>
 
-</header>
-
+</header> 
