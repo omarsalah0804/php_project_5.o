@@ -44,7 +44,14 @@ if (isset($_GET['delete'])) {
 
       th,
       td {
+<<<<<<< HEAD
          border: 0.1rem solid #dfeaf1;
+=======
+         border:0.1rem solid #dfeaf1
+
+
+;
+>>>>>>> c371e3d7259fff1a257d957c887626aa6c9eeb4c
          padding: 4rem;
          text-align: center;
       }
