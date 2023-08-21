@@ -61,7 +61,7 @@ section{
    margin-top: 1rem;
    border-radius: .5rem;
    cursor: pointer;
-   width: 100%;
+   width: 50%;
    font-size: 1.8rem;
    color:var(--white);
    padding:1.2rem 3rem;
@@ -337,6 +337,7 @@ section{
 .show-products .box-container{
    display: grid;
    grid-template-columns: repeat(auto-fit, 33rem);
+
    gap:1.5rem;
    justify-content: center;
    align-items: flex-start;
@@ -463,10 +464,11 @@ section{
 
 .accounts .box-container{
    display: grid;
-   grid-template-columns: repeat(auto-fit, 33rem);
+   grid-template-columns: repeat(1, 1fr);
    gap:1.5rem;
    justify-content: center;
    align-items: flex-start;
+
 }
 
 .accounts .box-container .box{
