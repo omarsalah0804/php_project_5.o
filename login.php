@@ -1,4 +1,4 @@
->
+
 
 
 <?php
@@ -26,7 +26,7 @@ if (isset($_POST['Login'])) {
 
     if ($select_user->rowCount() > 0) {
         $_SESSION['user_id'] = $row['id'];
-        header('location:home.php');
+        header('location:index.html');
     } else {
         $message[] = 'incorrect username or password!';
     }
