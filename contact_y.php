@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
 
 include 'components/connect.php';
 
@@ -37,7 +37,8 @@ if(isset($_POST['send'])){
 
 }
 
-?> -->
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -137,9 +138,9 @@ if(isset($_POST['send'])){
       <div class = "footer-item">
         <h3>support</h3>
         <ul>
-          <li><a href = "#">FAQ</a></li>
+          <!-- <li><a href = "#">FAQ</a></li>
           <li><a href = "#">how it works</a></li>
-          <li><a href = "#">features</a></li>
+          <li><a href = "#">features</a></li> -->
           <li><a href = "#">contact</a></li>
         </ul>
       </div>
