@@ -44,24 +44,28 @@ if (isset($_GET['delete'])) {
          /* Set a maximum width for the table */
          border-collapse: collapse;
          margin-top: 2rem;
-         margin-left: 12rem;
+
       }
 
       th,
       td {
-         border: var(--border);
-         padding: 1rem;
+         border: 0.1rem solid black;
+         padding: 4rem;
          text-align: center;
       }
 
       th {
-         background-color: var(--main-color);
+         background-color: #C0D6E4;
          color: var(--white);
+         font-size: 1.5rem;
+         letter-spacing: 1px;
+         color: var(--black);
       }
 
       td {
          background-color: var(--light-bg);
          color: var(--black);
+         font-size: 1.5rem;
       }
 
       tr:nth-child(even) {

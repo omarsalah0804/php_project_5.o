@@ -112,7 +112,7 @@
                         </li>
                         <li>
                             <a href="admin_accounts.php">
-                                <i class="fa fa-barcode"></i>admin</a>
+                                <i class="fa fa-users"></i>admin</a>
                         </li>
                         <li>
                             <a href="placed_orders.php">
