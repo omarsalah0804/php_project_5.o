@@ -1,3 +1,20 @@
+<?php
+
+include 'components/connect.php';
+
+session_start();
+
+if (isset($_SESSION['user_id'])) {
+    $user_id = $_SESSION['user_id'];
+} else {
+    $user_id = '';
+};
+
+include 'components/add_cart.php';
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,21 +22,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
     <title>About Us - CUSHION HOUSE</title>
     <style>
-
-:root{
-    --blackRussian: #767575;
-    --greyWhite: #ffffff;
-    --pacificBlue: #1ca9c9;
-}
-        header {
-            background-color: #333;
-            color: #ffffff;
-            text-align: center;
-            padding: 1rem;
-        }
-
         .container {
             display: grid;
             grid-template-columns: 2fr 1fr;
@@ -62,65 +70,51 @@
             line-height: 1.6;
         }
 
-        .btnnav a{
+        .btnnav a {
             color: #000;
         }
 
-        .btnnav button{
+        .btnnav button {
             background-color: var(--blackRussian);
         }
     </style>
 </head>
 
 <body>
-    <!-- header -->
-    <header class="header">
-        <div class="head-top">
-            <a href="index.html" class="brand-name">
-                Harmony
-                <span>HOMESTYLES</span>
-            </a>
-            <div class="btnnav">
-                <button><a href="index.html">Home</a></button>
-                <!-- <button><a href="about.html"><span>About Us</span></a></button> -->
-            </div>
+
+
+    <?php include 'components/user_header.php'; ?>
+    <div class="container">
+        <div class="about-text">
+            <p>Welcome to our home furnishing store, where comfort meets style. Discover a curated collection that
+                transforms houses into dream homes. From sleek sofas to elegant dining sets, our pieces are designed
+                to reflect your unique taste. With a commitment to quality and innovation, we're here to turn your
+                living spaces into cozy havens. Experience the art of furnishing with us today.</p>
         </div>
-        <!-- end of header -->
-        <header>
-            <h1>About Us</h1>
-            <h3>Discover the world of CUSHION HOUSE</h3>
-        </header>
-        <div class="container">
-            <div class="about-text">
-                <p>Welcome to our home furnishing store, where comfort meets style. Discover a curated collection that
-                    transforms houses into dream homes. From sleek sofas to elegant dining sets, our pieces are designed
-                    to reflect your unique taste. With a commitment to quality and innovation, we're here to turn your
-                    living spaces into cozy havens. Experience the art of furnishing with us today.</p>
-            </div>
-            <img class="about-image" src="./img/about1.jpg" alt="Store Image">
+        <img class="about-image" src="./img/about1.jpg" alt="Store Image">
+    </div>
+    <div class="container2">
+        <img class="about-image2" src="./img/about2.jpg" alt="Store Image">
+        <div class="about-text2">
+            <p>Step into cushion House, your ultimate home furnishing destination. Uncover a handpicked array that
+                turns ordinary spaces into extraordinary abodes. Our range, from plush sofas to exquisite dining
+                ensembles, mirrors your distinct preferences. Embracing excellence and ingenuity, we're dedicated to
+                crafting inviting sanctuaries. Embark on a journey of furnishing finesse with cushion House today.
+            </p>
         </div>
-        <div class="container2">
-            <img class="about-image2" src="./img/about2.jpg" alt="Store Image">
-            <div class="about-text2">
-                <p>Step into cushion House, your ultimate home furnishing destination. Uncover a handpicked array that
-                    turns ordinary spaces into extraordinary abodes. Our range, from plush sofas to exquisite dining
-                    ensembles, mirrors your distinct preferences. Embracing excellence and ingenuity, we're dedicated to
-                    crafting inviting sanctuaries. Embark on a journey of furnishing finesse with cushion House today.
-                </p>
-            </div>
+    </div>
+    <div class="container">
+        <div class="about-text">
+            <p> <span>cushion House </span>It is the ultimate guide to decorating and design and the indispensable go-to source for everyone
+                who wants to create a more beautiful life.
+                Whether your taste is classic or contemporary—or an eclectic mix of both—you'll find ideas and
+                inspiration, the latest information and products, and tools to help you decorate, renovate, and
+                entertain stylishly.</p>
         </div>
-        <div class="container">
-            <div class="about-text">
-                <p> <span>cushion House </span>It is the ultimate guide to decorating and design and the indispensable go-to source for everyone
-                    who wants to create a more beautiful life.
-                    Whether your taste is classic or contemporary—or an eclectic mix of both—you'll find ideas and
-                    inspiration, the latest information and products, and tools to help you decorate, renovate, and
-                    entertain stylishly.</p>
-            </div>
-            <img class="about-image" src="./img/about3.jpg" alt="Store Image">
-        </div>
-        <!-- footer -->
-        <!-- <footer class="footer container">
+        <img class="about-image" src="./img/about3.jpg" alt="Store Image">
+    </div>
+    <!-- footer -->
+    <!-- <footer class="footer container">
             <div class="footer-item">
                 <a href="index.html">
                     <h2 class="brand-name">
@@ -177,7 +171,10 @@
             </div>
         </footer>
         end of footer -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
