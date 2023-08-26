@@ -29,6 +29,26 @@ include 'components/add_cart.php';
    <!-- custom css file link  -->
    <link rel="stylesheet" href="css/style.css">
 
+
+   <style>
+
+.btnCart{
+   display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 18rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+letter-spacing: 1px;}
+.btnCart:hover {
+  background-color: #2980b9;}
+   </style>
+
 </head>
 
 <body>
@@ -62,7 +82,8 @@ include 'components/add_cart.php';
                   <input type="hidden" name="price" value="<?= $fetch_products['price']; ?>">
                   <input type="hidden" name="image" value="<?= $fetch_products['image']; ?>">
                   <a href="quick_view.php?pid=<?= $fetch_products['id']; ?>" class="fas fa-eye"></a>
-                  <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
+                  <button type="submit" name="add_to_cart" class="btnCart">Add to Cart</button>
+                
                   <img src="uploaded_img/<?= $fetch_products['image']; ?>" alt="">
                   <a href="category.php?category=<?= $fetch_products['category']; ?>" class="cat"><?= $fetch_products['category']; ?></a>
                   <div class="name"><?= $fetch_products['name']; ?></div>
@@ -120,8 +141,11 @@ include 'components/add_cart.php';
 
 
 <!-- custom js file link  -->
+
 <script src=" js/script.js"></script>
+<script src="js/popup.js"></script>
 
 </body>
+
 
 </html>

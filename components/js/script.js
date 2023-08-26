@@ -32,3 +32,20 @@ document.querySelectorAll('input[type="number"]').forEach(numberInput => {
       if(numberInput.value.length > numberInput.maxLength) numberInput.value = numberInput.value.slice(0, numberInput.maxLength);
    };
 });
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    var message = "<?php echo $_SESSION['cart_message']; ?>";
+    if (message !== "") {
+        var popup = document.getElementById("popup-message");
+        popup.textContent = message;
+        popup.style.display = "block"; // Show the popup
+        setTimeout(function() {
+            popup.style.display = "none"; // Hide the popup after a few seconds
+        }, 3000); // Adjust the time as needed
+    }
+});
+
+
+
