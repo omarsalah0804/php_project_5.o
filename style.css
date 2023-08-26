@@ -51,25 +51,8 @@ h2{
     background-color: #dedee4;
 }
 
-/* header */
-.header{
-    min-height: 100vh;
-    background: var(--blackRussian);
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
-   
-}
-.head-top{
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90vw;
-    margin: 0 auto;
-    padding: 18px 0;
-    
-}
+
+
 .head-body{
     flex: 1;
     background: var(--greyWhite);
@@ -702,71 +685,25 @@ section{
    gap:1rem;
 }
 
-.header{
-   position: sticky;
-   top:0; left:0; right:0;
-   z-index: 1000;
-   background-color: var(--white);
-   border-bottom: var(--border);
-}
 
-.header .flex{
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   position: relative;
-}
 
-.header .flex .logo{
-   font-size: 2.5rem;
-   color:var(--black);
-}
 
-.header .flex .navbar a{
-   font-size: 2rem;
-   color:var(--black);
-   margin:0 1rem;
-}
 
-.header .flex .navbar a:hover{
-   color:var(--yellow);
-   text-decoration: underline;
-}
 
-.header .flex .icons > *{
-   margin-left: 1.5rem;
-   font-size: 2.5rem;
-   color:var(--black);
-   cursor: pointer;
-}
 
-.header .flex .icons > *:hover{
-   color: var(--yellow);
-}
 
-.header .flex .icons span{
-   font-size: 2rem;
-}
+
+
+
+
+
 
 #menu-btn{
    display: none;
 }
 
-.header .flex .profile{
-   background-color: var(--white);
-   border:var(--border);
-   padding:1.5rem;
-   text-align: center;
-   position: absolute;
-   top:125%; right:2rem;
-   width: 30rem;
-   display: none;
-   animation: fadeIn .2s linear;
-}
 
-.header .flex .profile.active{
-   display: inline-block;
-}
+
 
 @keyframes fadeIn {
    0%{
@@ -774,26 +711,12 @@ section{
    }
 }
 
-.header .flex .profile .name{
-   font-size: 2rem;
-   color:var(--black);
-   margin-bottom: .5rem;
-}
 
-.header .flex .profile .account{
-   margin-top: 1.5rem;
-   font-size: 2rem;
-   color:var(--light-color);
-}
 
-.header .flex .profile .account a{
-   color:var(--black);
-}
 
-.header .flex .profile .account a:hover{
-   color:var(--yellow);
-   text-decoration: underline;
-}
+
+
+
 
 .hero .slide{
    display: flex;
@@ -1557,24 +1480,11 @@ section{
       display: inline-block;
    }
 
-   .header .flex .navbar{
-      position: absolute;
-      top:99%; left: 0; right: 0;
-      border-top: var(--border);
-      border-bottom: var(--border);
-      background-color: var(--white);
-      transition: .2s linear;
-      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-   }
+   
 
-   .header .flex .navbar a{
-      display: block;
-      margin:2rem;
-   }
+ 
 
-   .header .flex .navbar.active{
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-   }
+ 
 
 }
 
@@ -1588,9 +1498,7 @@ section{
       font-size: 3rem;
    }
 
-   .header .flex .logo{
-      font-size: 2rem;
-   }
+   
 
    .hero .slide .content h3{
       font-size: 5rem;

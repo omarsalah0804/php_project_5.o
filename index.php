@@ -113,7 +113,7 @@ include 'components/add_cart.php';
     <div class="swiper-button-next"></div>
   </div>
 
-  </header>
+
   <!-- end of header -->
 
   <!-- cato product -->
@@ -273,31 +273,9 @@ include 'components/add_cart.php';
           </div>
         </div>
       </div>
-      <!-- end of item -->
-      <!-- item -->
-      <!-- <div class = "featured-item">
-          <div class = "featured-item-img">
-            <img src = "assets/wide-sofa.png" alt = "feature image">
-          </div>
-          <div class = "featured-item-content">
-            <div class = "title">
-              <h4>featured product </h4>
-              <h3>wide comfortable sofa</h3>
-              <p class = "item-price">$90.55</p>
-            </div>
-            <p class = "text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quasi consequatur veniam, veritatis necessitatibus rem voluptas pariatur doloremque id culpa, eveniet, ratione libero eos fuga.
-            </p>
-            <div class = "featured-btns">
-              <button type = "button" class = "btn">Show More</button>
-              <button type = "button" class = "btn">Purchase</button>
-            </div>
-          </div>
-        </div> -->
-      <!-- end of item -->
+
     </div>
   </section>
-  <!-- end of featured product -->
 
   <!-- blog -->
   <section class="blog">
@@ -350,35 +328,7 @@ include 'components/add_cart.php';
       </div>
     </div>
   </section>
-  <!-- end of blog -->
 
-  <!-- newsletter -->
-  <!-- <section class = "newsletter">
-      <div class = "container">
-        <div class = "newsletter-content">
-          <div class = "title">
-            <h4>subscribe to our newsletter</h4>
-            <h2>Newsletter</h2>
-          </div>
-          
-          <form>
-            <div class = "form-group">
-              <input type = "email" class = "form-control" placeholder="Enter your email address">
-              <button type = "submit" class = "subscribe-btn">
-                subscribe
-                <i class = "fas fa-chevron-right"></i>
-              </button>
-            </div>
-          </form>
-
-          <div class = "circle-box circle-1"></div>
-          <div class = "circle-box circle-2"></div>
-        </div>
-      </div>
-    </section>
-    end of newsletter -->
-
-  <!-- footer -->
   <footer class="footer container">
     <div class="footer-item">
       <h2 class="brand-name">
@@ -429,21 +379,18 @@ include 'components/add_cart.php';
       <h3>support</h3>
       <ul>
         <li><a href="contact_y.php">contact</a></li>
-        <!-- <li><a href = "#">FAQ</a></li>
-          <li><a href = "#">how it works</a></li>
-          <li><a href = "#">features</a></li> -->
+
 
       </ul>
     </div>
   </footer>
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
-  <!-- custom js file link  -->
-  <script src="js/script.js"></script>
-  <!-- end of footer -->
-</body>
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-<script src="slider.js"></script>
-<!-- <script src="script.js"></script> -->
+  < </body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="slider.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    >
+    <script src="js/script.js"></script>
 
 </html>
