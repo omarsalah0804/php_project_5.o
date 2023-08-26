@@ -519,6 +519,9 @@ h2{
 .no-underline {
   text-decoration: none;
 }
+<<<<<<< HEAD
+
+=======
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
 
 :root{
@@ -1523,3 +1526,4 @@ section{
    }   
 
 }
+>>>>>>> 92d2d984de02bb7cb508a05f5fc01c59f89c5c82
